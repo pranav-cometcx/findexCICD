@@ -8,8 +8,18 @@
  * Ver   Date         Author           Modification
  * 1.0   08-26-2024   Pranav Narayan   Initial Version
 **/
-public with sharing class cls_Controller {
-    public cls_Controller() {
-        system.debug('Constructor');
+@isTest
+public with sharing class test_cls_Controller {
+    
+    @isTest
+    private static void testTestCase() {
+        // Test data setup
+    
+        // Actual test
+        Test.startTest();
+            cls_Controller instance = new cls_Controller();
+        Test.stopTest();
+    
+        // Asserts
     }
 }
